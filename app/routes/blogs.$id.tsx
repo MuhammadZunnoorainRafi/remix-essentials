@@ -1,12 +1,12 @@
-import { useSearchParams } from '@remix-run/react';
+import { useParams } from '@remix-run/react';
 
 function SingleBlog() {
-  const searchParams = useSearchParams();
-  console.log(searchParams);
+  const params = useParams();
+
   return (
     <div>
       <h1>SingleBlog</h1>
-      <p></p>
+      <p>{params.id}</p>
     </div>
   );
 }
