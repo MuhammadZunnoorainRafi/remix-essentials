@@ -21,7 +21,9 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
+        <main className="h-48 bg-slate-200 ">
+          <Outlet />
+        </main>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
